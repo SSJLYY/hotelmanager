@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<Platforms>x64</Platforms>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>EOM.TSHotelManagement.Contract</PackageId>
+		<Title>EOM.TSHOTEL.CONTRACT</Title>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Business\News\Dto\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EOM.TSHotelManagement.Common\EOM.TSHotelManagement.Common.csproj" />
+	</ItemGroup>
+
+</Project>

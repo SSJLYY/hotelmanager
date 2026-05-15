@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<Platforms>x64</Platforms>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>EOM.TSHotelManagement.Service</PackageId>
+		<Title>EOM.TSHOTEL.SERVICE</Title>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<NoWarn>1701;1702;8618;</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<NoWarn>1701;1702;8618;</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Others\**" />
+		<EmbeddedResource Remove="Others\**" />
+		<None Remove="Others\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EOM.TSHotelManagement.Contract\EOM.TSHotelManagement.Contract.csproj" />
+    <ProjectReference Include="..\EOM.TSHotelManagement.Data\EOM.TSHotelManagement.Data.csproj" />
+  </ItemGroup>
+
+</Project>

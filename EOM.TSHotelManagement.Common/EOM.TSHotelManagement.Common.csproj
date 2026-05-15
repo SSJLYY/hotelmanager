@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>False</GenerateDocumentationFile>
+		<Platforms>x64</Platforms>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>EOM.TSHotelManagement.Common</PackageId>
+		<Title>EOM.TSHOTEL.COMMON</Title>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+	  <DebugType>portable</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+	  <DebugType>portable</DebugType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="jvncorelib" Version="1.0.1.7" />
+		<PackageReference Include="MailKit" Version="4.15.1" />
+		<PackageReference Include="Mapster" Version="7.4.0" />
+		<PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="10.0.1" />
+		<PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.16.0" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.16.0" />
+		<PackageReference Include="Quartz" Version="3.15.1" />
+		<PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.15.1" />
+		<PackageReference Include="Quartz.Extensions.Hosting" Version="3.15.1" />
+		<PackageReference Include="SqlSugarCoreNoDrive" Version="5.1.4.213" />
+		<PackageReference Include="StackExchange.Redis" Version="2.10.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EOM.TSHotelManagement.Domain\EOM.TSHotelManagement.Domain.csproj" />
+    <ProjectReference Include="..\EOM.TSHotelManagement.Infrastructure\EOM.TSHotelManagement.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

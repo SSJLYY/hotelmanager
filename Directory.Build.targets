@@ -1,0 +1,29 @@
+<Project>
+  <Target Name="AutoIncrementVersion" BeforeTargets="GenerateNuspec">
+    <ReadLinesFromFile File="$(VersionFile)" Condition="Exists('$(VersionFile)')">
+      <Output TaskParameter="Lines" ItemName="BuildNumberLines" />
+    </ReadLinesFromFile>
+
+    <PropertyGroup>
+      <CurrentBuildNumber Condition="'@(BuildNumberLines)' != ''">@(BuildNumberLines)</CurrentBuildNumber>
+      <CurrentBuildNumber Condition="'$(CurrentBuildNumber)' == ''">0</CurrentBuildNumber>
+
+      <CurrentBuildNumberInt>$([System.Int32]::Parse($(CurrentBuildNumber)))</CurrentBuildNumberInt>
+      <NewBuildNumberInt>$([MSBuild]::Add($(CurrentBuildNumberInt), 1))</NewBuildNumberInt>
+      <NewBuildNumber>$(NewBuildNumberInt)</NewBuildNumber>
+    </PropertyGroup>
+
+    <Message Importance="high" Text="当前构建号: $(CurrentBuildNumber)" />
+    <Message Importance="high" Text="新构建号: $(NewBuildNumber)" />
+
+    <WriteLinesToFile
+      File="$(VersionFile)"
+      Lines="$(NewBuildNumber)"
+      Overwrite="true" />
+
+    <PropertyGroup>
+      <Version>$(MajorVersion).$(MinorVersion).$(NewBuildNumber)</Version>
+      <PackageVersion>$(Version)</PackageVersion>
+    </PropertyGroup>
+  </Target>
+</Project>

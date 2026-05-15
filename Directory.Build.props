@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup>
+    <MajorVersion>1</MajorVersion>
+    <MinorVersion>10</MinorVersion>
+    <PatchVersion>0</PatchVersion>
+    <Version>$(MajorVersion).$(MinorVersion).$(PatchVersion)</Version>
+    <PackageVersion>$(Version)</PackageVersion>
+    <VersionFile>$(MSBuildThisFileDirectory).buildnumber</VersionFile>
+    <Authors>易开元(Easy Open Meta)</Authors>
+    <Description>Service to TS Hotel Management System Project, Development By Easy Open Meta</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://gitee.com/java-and-net/topsky-hotel-management-system-web-api</PackageProjectUrl>
+    <RepositoryUrl>https://gitee.com/java-and-net/topsky-hotel-management-system-web-api</RepositoryUrl>
+  </PropertyGroup>
+</Project>

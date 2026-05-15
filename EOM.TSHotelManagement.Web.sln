@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11206.111
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EOM.TSHotelManagement.Data", "EOM.TSHotelManagement.Data\EOM.TSHotelManagement.Data.csproj", "{B0415048-E431-4FCF-9CF7-C1345C6F7750}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EOM.TSHotelManagement.Service", "EOM.TSHotelManagement.Service\EOM.TSHotelManagement.Service.csproj", "{FE75A00A-4B07-49CE-8F17-F483044A569A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EOM.TSHotelManagement.API", "EOM.TSHotelManagement.API\EOM.TSHotelManagement.API.csproj", "{4E6141F1-5096-46AB-AF4F-6BB6F348366C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EOM.TSHotelManagement.Domain", "EOM.TSHotelManagement.Domain\EOM.TSHotelManagement.Domain.csproj", "{D99F4527-C620-4073-92B1-254A6C7FA363}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EOM.TSHotelManagement.Common", "EOM.TSHotelManagement.Common\EOM.TSHotelManagement.Common.csproj", "{4D8B62E1-2D40-47E6-912D-D7B08F3F031A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EOM.TSHotelManagement.Migration", "EOM.TSHotelManagement.Migration\EOM.TSHotelManagement.Migration.csproj", "{A1A986E0-E59D-4913-B63E-D965453B8CC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EOM.TSHotelManagement.Contract", "EOM.TSHotelManagement.Contract\EOM.TSHotelManagement.Contract.csproj", "{B83A545B-9FFA-784F-3486-87BB3B50F46D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EOM.TSHotelManagement.Infrastructure", "EOM.TSHotelManagement.Infrastructure\EOM.TSHotelManagement.Infrastructure.csproj", "{C390E995-B01C-4C4A-9335-3AD14CCFFA2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0415048-E431-4FCF-9CF7-C1345C6F7750}.Debug|x64.ActiveCfg = Debug|x64
+		{B0415048-E431-4FCF-9CF7-C1345C6F7750}.Debug|x64.Build.0 = Debug|x64
+		{B0415048-E431-4FCF-9CF7-C1345C6F7750}.Release|x64.ActiveCfg = Release|x64
+		{B0415048-E431-4FCF-9CF7-C1345C6F7750}.Release|x64.Build.0 = Release|x64
+		{FE75A00A-4B07-49CE-8F17-F483044A569A}.Debug|x64.ActiveCfg = Debug|x64
+		{FE75A00A-4B07-49CE-8F17-F483044A569A}.Debug|x64.Build.0 = Debug|x64
+		{FE75A00A-4B07-49CE-8F17-F483044A569A}.Release|x64.ActiveCfg = Release|x64
+		{FE75A00A-4B07-49CE-8F17-F483044A569A}.Release|x64.Build.0 = Release|x64
+		{4E6141F1-5096-46AB-AF4F-6BB6F348366C}.Debug|x64.ActiveCfg = Debug|x64
+		{4E6141F1-5096-46AB-AF4F-6BB6F348366C}.Debug|x64.Build.0 = Debug|x64
+		{4E6141F1-5096-46AB-AF4F-6BB6F348366C}.Release|x64.ActiveCfg = Release|x64
+		{4E6141F1-5096-46AB-AF4F-6BB6F348366C}.Release|x64.Build.0 = Release|x64
+		{D99F4527-C620-4073-92B1-254A6C7FA363}.Debug|x64.ActiveCfg = Debug|x64
+		{D99F4527-C620-4073-92B1-254A6C7FA363}.Debug|x64.Build.0 = Debug|x64
+		{D99F4527-C620-4073-92B1-254A6C7FA363}.Release|x64.ActiveCfg = Release|x64
+		{D99F4527-C620-4073-92B1-254A6C7FA363}.Release|x64.Build.0 = Release|x64
+		{4D8B62E1-2D40-47E6-912D-D7B08F3F031A}.Debug|x64.ActiveCfg = Debug|x64
+		{4D8B62E1-2D40-47E6-912D-D7B08F3F031A}.Debug|x64.Build.0 = Debug|x64
+		{4D8B62E1-2D40-47E6-912D-D7B08F3F031A}.Release|x64.ActiveCfg = Release|x64
+		{4D8B62E1-2D40-47E6-912D-D7B08F3F031A}.Release|x64.Build.0 = Release|x64
+		{A1A986E0-E59D-4913-B63E-D965453B8CC0}.Debug|x64.ActiveCfg = Debug|x64
+		{A1A986E0-E59D-4913-B63E-D965453B8CC0}.Debug|x64.Build.0 = Debug|x64
+		{A1A986E0-E59D-4913-B63E-D965453B8CC0}.Release|x64.ActiveCfg = Release|x64
+		{A1A986E0-E59D-4913-B63E-D965453B8CC0}.Release|x64.Build.0 = Release|x64
+		{B83A545B-9FFA-784F-3486-87BB3B50F46D}.Debug|x64.ActiveCfg = Debug|x64
+		{B83A545B-9FFA-784F-3486-87BB3B50F46D}.Debug|x64.Build.0 = Debug|x64
+		{B83A545B-9FFA-784F-3486-87BB3B50F46D}.Release|x64.ActiveCfg = Release|x64
+		{B83A545B-9FFA-784F-3486-87BB3B50F46D}.Release|x64.Build.0 = Release|x64
+		{C390E995-B01C-4C4A-9335-3AD14CCFFA2C}.Debug|x64.ActiveCfg = Debug|x64
+		{C390E995-B01C-4C4A-9335-3AD14CCFFA2C}.Debug|x64.Build.0 = Debug|x64
+		{C390E995-B01C-4C4A-9335-3AD14CCFFA2C}.Release|x64.ActiveCfg = Release|x64
+		{C390E995-B01C-4C4A-9335-3AD14CCFFA2C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD202AAD-1D93-4B16-84FE-CE52283EAB41}
+	EndGlobalSection
+EndGlobal

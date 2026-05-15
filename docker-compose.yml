@@ -1,0 +1,20 @@
+﻿services:
+  tshotel-api:
+    image: ${TSHOTEL_IMAGE:-yjj6731/tshotel-management-system-api:latest}
+    container_name: ${CONTAINER_NAME:-tshotel-api}
+    restart: unless-stopped
+    ports:
+      - "${API_HOST_PORT:-63001}:8080"
+    volumes:
+      - "${APP_CONFIG_DIR:-./docker-data/config}:/app/config"
+      - "${APP_KEYS_DIR:-./docker-data/keys}:/app/keys"
+    environment:
+      - ASPNETCORE_CONFIG_DIRECTORY=/app/config
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT:-docker}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health", "||", "exit", "1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    env_file:
+      - .env

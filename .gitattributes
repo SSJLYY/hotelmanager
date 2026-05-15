@@ -1,0 +1,18 @@
+# Normalize text files and keep line endings consistent in the repository.
+* text=auto eol=lf
+
+# Keep Windows command scripts in CRLF for best compatibility.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Common binary assets.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.7z binary
+*.dll binary
+*.exe binary
